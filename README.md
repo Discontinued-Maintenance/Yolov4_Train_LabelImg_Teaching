@@ -79,7 +79,7 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 
 ---
 
-windows 建置環境可以參考下列教學
+### windows 建置環境可以參考下列教學
 
 * [CUDA 與 CuDNN 安裝](https://medium.com/ching-i/win10-%E5%AE%89%E8%A3%9D-cuda-cudnn-%E6%95%99%E5%AD%B8-c617b3b76deb)
 
@@ -87,7 +87,7 @@ windows 建置環境可以參考下列教學
 
 ---
 
-Linux、Ubuntu 安裝Darknet 較為簡單
+### Linux、Ubuntu 安裝Darknet 較為簡單
 
 * cd至Darknet資料夾底下，打開Makefile跟改下列四行，由0變成1
 * 改為1是為了讓GPU可以運算0的話則為CPU運算
