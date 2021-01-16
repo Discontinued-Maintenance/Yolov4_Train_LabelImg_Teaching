@@ -109,3 +109,12 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 ---
 
 ### 因為方便各位訓練因此這次我們會使用Colaboratory來建置訓練環境
+
+[Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
+
+更改為GPU資源運算-->點選「執行階段」-「變更執行階段類型」
+
+更多操作指令參考
+
+[Google Colab相關設定](https://hackmd.io/@wiimax/HJuUPnPQr)
+
