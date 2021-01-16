@@ -84,3 +84,24 @@ windows 建置環境可以參考下列教學
 [CUDA 與 CuDNN 安裝](https://medium.com/ching-i/win10-%E5%AE%89%E8%A3%9D-cuda-cudnn-%E6%95%99%E5%AD%B8-c617b3b76deb)
 
 [window Darknet make](https://ithelp.ithome.com.tw/articles/10231950)
+
+Linux、Ubuntu 安裝Darknet 較為簡單
+
+* cd至Darknet資料夾底下，打開Makefile跟改下列四行，由0變成1
+* 改為1是為了讓GPU可以運算0的話則為CPU運算
+* 更改完儲存後直接key入
+* `make`
+
+* 如遇到`遇到nvcc not found`錯誤輸入下列指令(下列路徑要替換成自己系統的路徑)
+
+  ```
+  export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}} export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}}:/home/itriedgetpunpust/anaconda3/envs/YOLO/lib
+  ```
+
+* 如遇到`No package 'opencv' found to the PKG_CONFIG_PATH environment variable`錯誤輸入下列指令(下列路徑要替換成自己系統的路徑)
+
+  ```
+  export  PKG_CONFIG_PATH=/home/itriedgetpunpust/anaconda3/envs/YOLO/lib/pkgconfig
+  ```
+
+
