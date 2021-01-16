@@ -75,3 +75,12 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 [Darknet](https://github.com/AlexeyAB/darknet)
 
 * git clone https://github.com/AlexeyAB/darknet.git
+* cd darknet && make
+
+### 因為方便各位訓練因此這次我們會使用Colaboratory來建置訓練環境
+
+windows 建置環境可以參考下列教學
+
+[CUDA 與 CuDNN 安裝](https://medium.com/ching-i/win10-%E5%AE%89%E8%A3%9D-cuda-cudnn-%E6%95%99%E5%AD%B8-c617b3b76deb)
+
+[window Darknet make](https://ithelp.ithome.com.tw/articles/10231950)
