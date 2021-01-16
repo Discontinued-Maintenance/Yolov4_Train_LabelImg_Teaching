@@ -47,6 +47,8 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 
 * 標記完成後打開Command OR Terminal並輸入以下指令
   * cd 至 XOXO(您的專案名稱)_detection檔案資料夾底下
+  * 更改PASCAL VOC xml to txt.py檔案內的57~61行，如下圖
+    ![PASCAL VOC xml to txt.py](https://github.com/TsaiRongFu/Yolov4_Train_LabelImg_Teaching/blob/main/ReadmePicture/PASCAL%20VOC%20xml%20to%20txt.JPG)
   * key入 `python PASCAL VOC xml to txt.py`
 
 當您完成上述步驟會在test、train資料夾內出現對應圖片檔名稱的txt也就是for yolo的標記檔，還有從image資料夾內複製的圖片
