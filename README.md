@@ -52,6 +52,18 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
   * 對應到test和train，所以說下列指令要做兩次，分別為跟改test後和train後
   * key入 `python PASCAL VOC xml to txt.py`
 
+  * 如遇到`No module named 'beautifulsoup4'`錯誤輸入下列指令
+
+    ```
+    pip3 install beautifulsoup4
+    ```
+
+  * 如遇到`lxml錯誤`輸入下列指令
+
+    ```
+    pip3 install lxml
+    ```
+
 當您完成上述步驟會在test、train資料夾內出現對應圖片檔名稱的txt也就是for yolo的標記檔，還有從image資料夾內複製的圖片
 
 在cfg資料夾內會出現test.txt、train.txt檔
