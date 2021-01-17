@@ -118,3 +118,14 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 
 [Google Colab相關設定](https://hackmd.io/@wiimax/HJuUPnPQr)
 
+複製darknet/cfg/yolov4-tiny-custom.cfg  到cfg資料夾底下
+
+```
+yolov4 偵測的濾鏡(filter) 大小為 (C+5)*B
+- B 是每個Feature Map可以偵測的bndBox數量，這裡設定為3
+- 5 是bndBox輸出的5個預測值: x,y,w,h 以及 Confidence
+- C 是類別數量
+filters=(classes + 5)*3  # 因為是一個類別，所以filters更改為 18
+classes=1  #人臉偵測只有一個類別
+```
+

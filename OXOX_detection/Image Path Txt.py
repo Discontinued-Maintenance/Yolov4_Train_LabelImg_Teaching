@@ -2,7 +2,7 @@ import os
 
 def writetxt(f, txtname, path):
     WriteFile = open(os.path.join('cfg', txtname), 'a+', encoding="utf-8")
-    WriteFile.write(os.getcwd() + '\\' + path + '\\' + f)
+    WriteFile.write(os.getcwd() + '/' + path + '/' + f)
     WriteFile.write('\n')
     WriteFile.close()
 
