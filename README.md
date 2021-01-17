@@ -126,6 +126,10 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 
 複製darknet/cfg/yolov4-tiny-custom.cfg  到cfg資料夾底下可以改名為yolov4-tiny-obj.cfg(好心的學長都有放到cfg資料夾內了)
 
+更改obj.names類別名稱
+
+更改obj.data路徑
+
 ```
 yolov4 偵測的濾鏡(filter) 大小為 (A+5)*B
 B 是每個Feature Map可以偵測的bndBox數量，這裡設定為3
@@ -134,5 +138,8 @@ A 是類別數量
 filters=(classes + 5)*3  # 因為是一個類別，所以filters更改為 18
 classes=1  
 ```
+
+修改yolov4-tiny-obj.cfg檔案，打開檔案搜尋classes，然後往上找的第一個filters要改，還有classes本身要改 
+
 修改預設 anchors 值，可以使用以下指令 (記得更改參數 cfg/face.data, num_of_clusters, width, height)，是由 Darknet 官方寫好可以自動算出 anchors值，再把anchors值貼回到yolov4-tiny-obj.cfg第219, 268 行
 
