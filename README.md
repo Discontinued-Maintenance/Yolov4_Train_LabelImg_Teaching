@@ -110,7 +110,9 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 
 ### 因為方便各位訓練因此這次我們會使用Colaboratory來建置訓練環境
 
-[Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
+[Colaboratory官方網站](https://colab.research.google.com/notebooks/intro.ipynb)
+
+[此次YOLO Colaboratory範例檔](https://colab.research.google.com/drive/1HuI37F6vfSFb7UK3_wnQDru5-zmh0mtg?usp=sharing)
 
 更改為GPU資源運算-->點選「執行階段」-「變更執行階段類型」
 
@@ -121,11 +123,12 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 複製darknet/cfg/yolov4-tiny-custom.cfg  到cfg資料夾底下
 
 ```
-yolov4 偵測的濾鏡(filter) 大小為 (C+5)*B
-- B 是每個Feature Map可以偵測的bndBox數量，這裡設定為3
-- 5 是bndBox輸出的5個預測值: x,y,w,h 以及 Confidence
-- C 是類別數量
+yolov4 偵測的濾鏡(filter) 大小為 (A+5)*B
+B 是每個Feature Map可以偵測的bndBox數量，這裡設定為3
+5 是bndBox輸出的5個預測值: x,y,w,h 以及 Confidence
+A 是類別數量
 filters=(classes + 5)*3  # 因為是一個類別，所以filters更改為 18
-classes=1  #人臉偵測只有一個類別
+classes=1  
 ```
+修改預設 anchors 值，可以使用以下指令 (記得更改參數 cfg/face.data, num_of_clusters, width, height)，是由 Darknet 官方寫好可以自動算出 anchors 值
 
