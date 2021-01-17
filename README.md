@@ -112,13 +112,13 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 
 [Colaboratory官方網站](https://colab.research.google.com/notebooks/intro.ipynb)
 
-[此次YOLO Colaboratory範例檔](https://colab.research.google.com/drive/1HuI37F6vfSFb7UK3_wnQDru5-zmh0mtg?usp=sharing)
-
-更改為GPU資源運算-->點選「執行階段」-「變更執行階段類型」
-
 更多操作指令參考
 
 [Google Colab相關設定](https://hackmd.io/@wiimax/HJuUPnPQr)
+
+[此次YOLO Colaboratory範例檔](https://colab.research.google.com/drive/1HuI37F6vfSFb7UK3_wnQDru5-zmh0mtg?usp=sharing)
+
+首先將Colaboratory更改為GPU資源運算-->點選「執行階段」-「變更執行階段類型」
 
 複製darknet/cfg/yolov4-tiny-custom.cfg  到cfg資料夾底下可以改名為yolov4-tiny-obj.cfg
 
