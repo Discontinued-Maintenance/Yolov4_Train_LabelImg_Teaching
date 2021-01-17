@@ -10,7 +10,12 @@ def Allfile(path, files, txtname):
     for f in files:
         fullpath = os.path.join(path, f)
         if os.path.isfile(fullpath):
-            writetxt(f, txtname, path)
+            if f.startswith('.'):
+                pass
+            elif f.endswith('.txt'):
+                pass
+            else:
+                writetxt(f, txtname, path)
         elif os.path.isdir(fullpath):
             pass
 
