@@ -120,7 +120,11 @@ labelImg設定好讀取圖片檔案資料夾、儲存標記檔資料夾(格別�
 
 首先將Colaboratory更改為GPU資源運算-->點選「執行階段」-「變更執行階段類型」
 
-複製darknet/cfg/yolov4-tiny-custom.cfg  到cfg資料夾底下可以改名為yolov4-tiny-obj.cfg
+將(YourObjectName)_detection壓縮上傳至於雲端資料夾內
+
+---
+
+複製darknet/cfg/yolov4-tiny-custom.cfg  到cfg資料夾底下可以改名為yolov4-tiny-obj.cfg(好心的學長都有放到cfg資料夾內了)
 
 ```
 yolov4 偵測的濾鏡(filter) 大小為 (A+5)*B
