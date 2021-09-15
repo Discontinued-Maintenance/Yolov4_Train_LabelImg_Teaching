@@ -1,3 +1,5 @@
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTsaiRongFu%2FYolov4_Train_LabelImg_Teaching&count_bg=%23F919F5&title_bg=%23585757&icon=linux.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)
+
 ## 標記圖片使用LabelImg
 
 [LabelImg Github](https://github.com/tzutalin/labelImg)
